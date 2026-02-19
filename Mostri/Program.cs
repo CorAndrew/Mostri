@@ -93,7 +93,7 @@ class Program
 
         do
         {
-            WriteLine("\n--- CENTRO ADDESTRAMENTO MOSTRI ---");
+            WriteLine("CENTRO ADDESTRAMENTO");
             WriteLine("1: Inizializza centro | 2: Allena mostro | 3: Cambia allenatore");
             WriteLine("4: Scambia allenatori | 5: Visualizza tutti | 6: Filtra per Tipo");
             WriteLine("7: Filtra per Energia | 8: Mostra Stanchi | 9: Esci");
@@ -127,6 +127,8 @@ class Program
                     break;
                 case "8":
                     if (inizializzato) VisualizzaStanchi(centro);
+                    break;
+                default:
                     break;
             }
         } while (scelta != "9");
